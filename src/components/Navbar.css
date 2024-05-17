@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  width: 100vw;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+.header-auth {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.header-auth-btn {
+  color: white;
+  border-width: 0;
+  background-color: #001529;
+  margin-top: 15px;
+  margin-left: 10px;
+  padding: 20px 20px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.header-content {
+  font-size: 22px;
+  color: white;
+  background-color: dimgray;
+}

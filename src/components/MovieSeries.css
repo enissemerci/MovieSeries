@@ -1,0 +1,25 @@
+.search {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 50px;
+}
+.search input {
+  width: 350px;
+  border-color: black;
+  text-align: center;
+}
+.search select {
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 150px 10px;
+}
+.movies img {
+  height: 300px;
+}

@@ -1,0 +1,19 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  width: 100vw;
+  color: white;
+}
+.footer-desc{
+    display: flex;
+}
+.footer-desc-link{
+    color: white;
+    margin-right:10px;
+}
+.footer-desc-link + .footer-desc-link::before {
+    content: "|";
+    margin: 0 5px; 
+  }
