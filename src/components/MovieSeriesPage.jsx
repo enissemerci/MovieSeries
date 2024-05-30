@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Input, Card } from "antd";
-import "./MovieSeries.css";
+import "../style/MovieSeries.css";
 const { Meta } = Card;
 
 const MovieSeriesPage = ({ category }) => {

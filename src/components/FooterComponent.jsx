@@ -2,7 +2,7 @@ import React from "react";
 import { Layout } from "antd";
 import { TwitterOutlined, FacebookFilled } from "@ant-design/icons";
 const { Footer } = Layout;
-import "./FooterComponent.css";
+import "../style/FooterComponent.css";
 export const FooterComponent = () => {
   return (
     <div>

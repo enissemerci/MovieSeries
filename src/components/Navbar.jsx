@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout, Button } from "antd";
 const { Header } = Layout;
-import "./Navbar.css";
+import "../style/Navbar.css";
 
 export const Navbar = () => {
   return (

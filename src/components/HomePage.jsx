@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "antd";
 import { useNavigate } from "react-router-dom";
-import "./HomePage.css";
+import "../style/HomePage.css";
 const { Meta } = Card;
 
 const HomePage = () => {
