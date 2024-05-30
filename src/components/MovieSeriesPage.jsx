@@ -11,6 +11,7 @@ const MovieSeriesPage = ({ category }) => {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
   const [sortBy, setSortBy] = useState("");
+
   //axios ile datayı çektim
   useEffect(() => {
     const fetchData = async () => {
@@ -50,7 +51,15 @@ const MovieSeriesPage = ({ category }) => {
         //büyük küçük harf farketmeksizin sonuç gösteriyo olucak
         entry.title.toLowerCase().includes(value.toLowerCase())
       );
-      filterEntries(filtered, category);
+      const filteredByCategory = filtered.filter((entry) => {
+        if (category === "movies") {
+          return entry.programType === "movie";
+        } else if (category === "series") {
+          return entry.programType === "series";
+        }
+        return true; // Tüm girişleri göster
+      });
+      setFilteredEntries(filteredByCategory);
     } else {
       filterEntries(entries, category);
     }
